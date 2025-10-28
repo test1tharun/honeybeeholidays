@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Youtube, Mail, MessageCircle, Smartphone } from "lucide-react";
+import { Smartphone } from "lucide-react";
 import logo from "@/assets/honeybee-logo.png";
 import gpayQr from "@/assets/gpay-qr-new.jpeg";
 import { Button } from "@/components/ui/button";
@@ -19,20 +19,9 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-5 md:gap-8 mb-5 md:mb-8">
             <div className="text-center md:text-left">
               <img src={logo} alt="HoneyBee Holidays" className="h-10 md:h-14 mx-auto md:mx-0 mb-3" />
-              <p className="text-xs md:text-base text-secondary-foreground/80 mb-3">
+              <p className="text-xs md:text-base text-secondary-foreground/80">
                 Experience nature. Live the journey.
               </p>
-              <div className="flex justify-center md:justify-start space-x-4">
-                <a href="#" className="text-secondary-foreground/60 hover:text-primary transition-colors" aria-label="Instagram">
-                  <Instagram className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-secondary-foreground/60 hover:text-primary transition-colors" aria-label="Facebook">
-                  <Facebook className="h-6 w-6" />
-                </a>
-                <a href="#" className="text-secondary-foreground/60 hover:text-primary transition-colors" aria-label="YouTube">
-                  <Youtube className="h-6 w-6" />
-                </a>
-              </div>
             </div>
 
             <div className="text-center">
@@ -64,14 +53,10 @@ const Footer = () => {
             <div className="text-center md:text-right">
               <h3 className="text-base md:text-xl font-semibold mb-2 md:mb-4 text-secondary-foreground">Contact Us</h3>
               <div className="space-y-1.5 md:space-y-3">
-                <a href="mailto:info@honeybeeholidays.com" className="flex items-center justify-center md:justify-end text-sm md:text-base text-secondary-foreground/80 hover:text-primary transition-colors">
-                  <Mail className="h-4 w-4 md:h-5 md:w-5 mr-2 flex-shrink-0" />
-                  <span className="break-all">info@honeybeeholidays.com</span>
-                </a>
-                <button onClick={openWhatsApp} className="flex items-center justify-center md:justify-end text-sm md:text-base text-secondary-foreground/80 hover:text-primary transition-colors w-full">
-                  <MessageCircle className="h-4 w-4 md:h-5 md:w-5 mr-2 flex-shrink-0" />
+                <a href="tel:+917598010898" className="flex items-center justify-center md:justify-end text-sm md:text-base text-secondary-foreground/80 hover:text-primary transition-colors">
+                  <Smartphone className="h-4 w-4 md:h-5 md:w-5 mr-2 flex-shrink-0" />
                   <span>+91 75980 10898</span>
-                </button>
+                </a>
               </div>
             </div>
 

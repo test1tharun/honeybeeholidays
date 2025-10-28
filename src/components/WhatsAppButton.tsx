@@ -1,11 +1,4 @@
 import { MessageCircle } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
 
 const WhatsAppButton = () => {
   const openWhatsApp = () => {
@@ -13,23 +6,16 @@ const WhatsAppButton = () => {
   };
 
   return (
-    <TooltipProvider>
-      <Tooltip>
-        <TooltipTrigger asChild>
-          <Button
-            onClick={openWhatsApp}
-            size="lg"
-            className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 h-14 w-14 md:h-16 md:w-16 rounded-full bg-[#25D366] hover:bg-[#20BA5A] shadow-2xl animate-scale-in"
-            aria-label="Chat on WhatsApp"
-          >
-            <MessageCircle className="h-7 w-7 md:h-8 md:w-8 text-white" />
-          </Button>
-        </TooltipTrigger>
-        <TooltipContent side="left" className="bg-secondary text-secondary-foreground">
-          <p className="font-medium">Chat with Hendrey Jose</p>
-        </TooltipContent>
-      </Tooltip>
-    </TooltipProvider>
+    <button
+      onClick={openWhatsApp}
+      className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex items-center gap-2 md:gap-3 bg-[#25D366] hover:bg-[#20BA5A] text-white px-3 py-2.5 md:px-5 md:py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105 animate-scale-in group"
+      aria-label="Chat on WhatsApp"
+    >
+      <MessageCircle className="h-5 w-5 md:h-6 md:w-6 flex-shrink-0" />
+      <span className="text-xs md:text-sm font-semibold whitespace-nowrap">
+        Chat on WhatsApp
+      </span>
+    </button>
   );
 };
 

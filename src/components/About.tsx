@@ -11,26 +11,26 @@ const About = () => {
           <p className="text-sm md:text-lg text-muted-foreground leading-relaxed mb-3">
             Welcome to HoneyBee Holidays, your gateway to exploring the stunning natural beauty and rich cultural heritage of Valparai and Coimbatore. Founded and managed by <span className="font-semibold text-foreground">Hendrey Jose</span>, a passionate local travel guide with deep roots in the region, we specialize in creating unforgettable experiences that connect you with nature.
           </p>
-          <p className="text-sm md:text-lg text-muted-foreground leading-relaxed">
+          <p className="hidden md:block text-lg text-muted-foreground leading-relaxed">
             Whether you're seeking adventure in the Western Ghats, tranquility in tea estates, or spiritual journeys to ancient temples, HoneyBee Holidays offers personalized tours that showcase the best of Tamil Nadu's hill country and plains.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 md:gap-6 mb-6 md:mb-12 max-w-5xl mx-auto">
-          <div className="bg-card p-3 md:p-6 rounded-lg shadow-md text-center border border-border hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: "0.1s" }}>
-            <MapPin className="h-8 w-8 md:h-12 md:w-12 text-primary mx-auto mb-2 md:mb-4" />
-            <h3 className="text-base md:text-xl font-semibold mb-1 text-foreground">Local Expertise</h3>
-            <p className="text-xs md:text-base text-muted-foreground">Native knowledge of hidden gems and authentic experiences</p>
+        <div className="grid grid-cols-3 gap-2 md:gap-6 mb-6 md:mb-12 max-w-5xl mx-auto">
+          <div className="bg-card p-2 md:p-6 rounded-lg shadow-md text-center border border-border hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <MapPin className="h-6 w-6 md:h-12 md:w-12 text-primary mx-auto mb-1.5 md:mb-4" />
+            <h3 className="text-xs md:text-xl font-semibold mb-0.5 md:mb-1 text-foreground">Local Expertise</h3>
+            <p className="text-[10px] md:text-base text-muted-foreground leading-tight md:leading-relaxed">Hidden gems & authentic experiences</p>
           </div>
-          <div className="bg-card p-3 md:p-6 rounded-lg shadow-md text-center border border-border hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <Phone className="h-8 w-8 md:h-12 md:w-12 text-primary mx-auto mb-2 md:mb-4" />
-            <h3 className="text-base md:text-xl font-semibold mb-1 text-foreground">Personal Service</h3>
-            <p className="text-xs md:text-base text-muted-foreground">Customized itineraries tailored to your interests</p>
+          <div className="bg-card p-2 md:p-6 rounded-lg shadow-md text-center border border-border hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: "0.2s" }}>
+            <Phone className="h-6 w-6 md:h-12 md:w-12 text-primary mx-auto mb-1.5 md:mb-4" />
+            <h3 className="text-xs md:text-xl font-semibold mb-0.5 md:mb-1 text-foreground">Personal Service</h3>
+            <p className="text-[10px] md:text-base text-muted-foreground leading-tight md:leading-relaxed">Customized itineraries</p>
           </div>
-          <div className="bg-card p-3 md:p-6 rounded-lg shadow-md text-center border border-border hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: "0.3s" }}>
-            <Mail className="h-8 w-8 md:h-12 md:w-12 text-primary mx-auto mb-2 md:mb-4" />
-            <h3 className="text-base md:text-xl font-semibold mb-1 text-foreground">Eco-Friendly</h3>
-            <p className="text-xs md:text-base text-muted-foreground">Sustainable tourism supporting local communities</p>
+          <div className="bg-card p-2 md:p-6 rounded-lg shadow-md text-center border border-border hover:shadow-lg transition-shadow animate-fade-in" style={{ animationDelay: "0.3s" }}>
+            <Mail className="h-6 w-6 md:h-12 md:w-12 text-primary mx-auto mb-1.5 md:mb-4" />
+            <h3 className="text-xs md:text-xl font-semibold mb-0.5 md:mb-1 text-foreground">Eco-Friendly</h3>
+            <p className="text-[10px] md:text-base text-muted-foreground leading-tight md:leading-relaxed">Sustainable tourism</p>
           </div>
         </div>
 
