@@ -48,21 +48,21 @@ const TourPackagesPreview = () => {
   ];
 
   return (
-    <section id="packages" className="py-20 bg-muted/50">
+    <section id="packages" className="py-8 md:py-20 bg-muted/50">
       <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+        <div className="text-center max-w-3xl mx-auto mb-6 md:mb-12">
+          <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4">
             🌿 Tour Packages
           </h2>
-          <p className="text-lg text-muted-foreground italic mb-2">
+          <p className="text-base md:text-lg text-muted-foreground italic mb-1.5 md:mb-2">
             "Where journeys become memories and nature becomes home."
           </p>
-          <p className="text-muted-foreground">
+          <p className="text-sm md:text-base text-muted-foreground">
             Explore our handcrafted travel experiences designed to create magical moments
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-8 mb-6 md:mb-12">
           {featuredPackages.map((pkg) => (
             <PackageCard
               key={pkg.id}
@@ -78,7 +78,7 @@ const TourPackagesPreview = () => {
         <div className="text-center">
           <Link
             to="/tour-packages"
-            className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 rounded-md text-lg font-medium transition-colors"
+            className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 h-10 md:h-12 px-6 md:px-8 rounded-md text-base md:text-lg font-medium transition-colors"
           >
             View All Packages 🌟
           </Link>

@@ -41,18 +41,18 @@ const CoimbatoreDestinations = () => {
   ];
 
   return (
-    <section className="py-12 md:py-20 bg-background">
+    <section className="py-8 md:py-20 bg-background">
       <div className="container mx-auto px-4 max-w-7xl">
-        <div className="max-w-3xl mx-auto text-center mb-8 md:mb-12 animate-fade-in">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 text-foreground">
+        <div className="max-w-3xl mx-auto text-center mb-6 md:mb-12 animate-fade-in">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-6 text-foreground">
             Explore <span className="text-primary">Coimbatore</span>
           </h2>
-          <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
+          <p className="text-sm md:text-lg text-muted-foreground leading-relaxed">
             The Manchester of South India offers a perfect blend of spirituality, nature, adventure, and modern entertainment.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+        <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
           {destinations.map((dest, index) => (
             <DestinationCard
               key={dest.title}
