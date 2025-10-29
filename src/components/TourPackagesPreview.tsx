@@ -7,42 +7,42 @@ import teaEstates from "@/assets/valparai_tea_estates_tour.webp";
 const TourPackagesPreview = () => {
   const featuredPackages = [
     {
-      id: 1,
-      title: "Athirapally & Valparai Bliss",
+      id: "v3",
+      title: "Valparai–Athirappilly Waterfalls Circuit",
       duration: "2N / 3D",
       image: athirapally,
-      description: "Experience the majesty of waterfalls and scenic hill drives",
+      description: "Route: Pollachi – Valparai – Athirappilly",
       highlights: [
-        "Athirapally & Valazhachal Falls",
-        "Sholayar Dam Views",
-        "Balaji Temple Visit",
-        "Forest Safari"
+        "Athirappilly & Valazhachal Falls",
+        "Sholayar & Pergalkuthu Dams",
+        "Charpa Waterfalls",
+        "Hill station sightseeing"
       ]
     },
     {
-      id: 5,
-      title: "Jungle Stay Experience",
+      id: "k2",
+      title: "Valparai Jungle Stay Experience",
       duration: "1N / 2D",
       image: jungleStay,
-      description: "Off-road jeep rides, wildlife spotting, and campfire nights",
+      description: "Deep forest stay with adventure activities",
       highlights: [
-        "Forest Stay with Campfire",
-        "Off-Road Jeep Adventures",
-        "Bird Watching",
-        "Kurangumudi Backwaters"
+        "Forest Stay with all meals",
+        "Off-road Jeep & Bird Watching",
+        "Campfire & Music",
+        "Kurangumudi Backwater"
       ]
     },
     {
-      id: 3,
-      title: "Quick Hill Retreat",
+      id: "v1",
+      title: "Valparai Getaway",
       duration: "1N / 2D",
       image: teaEstates,
-      description: "Perfect weekend escape for nature lovers",
+      description: "Perfect weekend in the hills",
       highlights: [
-        "Aliyar Dam & Park",
-        "Monkey Falls",
-        "Koolangal River",
-        "Scenic View Points"
+        "Aliyar Dam & Monkey Falls",
+        "Tiger Valley & View Points",
+        "Balaji Temple",
+        "Sholayar Dam"
       ]
     }
   ];

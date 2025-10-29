@@ -17,206 +17,229 @@ const TourPackages = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const packages = [
+  // VALPARAI PACKAGES
+  const valparaiPackages = [
     {
-      id: 1,
-      title: "Athirapally & Valparai Bliss",
-      duration: "2N / 3D",
-      image: athirapally,
-      description: "Experience the majesty of waterfalls and scenic hill drives",
-      highlights: [
-        "Athirapally, Valazhachal & Charpa Falls",
-        "Sholayar & Perigalkuthu Dam Views",
-        "Balaji Temple & Velankanni Shrine",
-        "Forest Safari & Wildlife Spotting"
-      ],
-      itinerary: [
-        "Day 1: Chalakudy → Athirapally Falls, Valazhachal Falls, Charpa Falls, Perigalkuthu Dam View, Sholayar Dam → Overnight in Valparai",
-        "Day 2: Valparai sightseeing (Balaji Temple, Annai Velankanni Shrine, Vellamalai Tunnel & Falls, Koolangal River, Nirar Dam, Nallamudi View Point) → Overnight stay",
-        "Day 3: Top Slip & Parambikulam Safari (Karvermarz Statue, Hornbill View Point, Loams View Point, Monkey Falls, Aliyar Dam & Park) → Return to Pollachi"
-      ]
-    },
-    {
-      id: 2,
-      title: "Pollachi – Valparai – Athirapally Escape",
-      duration: "2N / 3D",
-      image: sholayar,
-      description: "Temple visits, hill drives, and spectacular waterfalls",
-      highlights: [
-        "Anaimalai & Massaniamman Temples",
-        "Aliyar Dam & Park",
-        "Sholayar & Vazhachal Falls",
-        "Scenic View Points"
-      ],
-      itinerary: [
-        "Day 1: Pollachi Arrival → Anaimalai Temple, Massaniamman Temple, Aliyar Dam, Monkey Falls, View Points → Overnight in Valparai",
-        "Day 2: Sholayar Dam, Vazhachal Falls, Charpa Falls, Athirapally → Overnight stay",
-        "Day 3: Balaji Temple, Vellamalai Tunnel & Falls, Nallamudi Viewpoint, Sholayar Dam → Drop at Pollachi"
-      ]
-    },
-    {
-      id: 3,
-      title: "Quick Hill Retreat",
+      id: "v1",
+      title: "Valparai Getaway",
       duration: "1N / 2D",
       image: teaEstates,
-      description: "Perfect weekend escape for nature lovers",
+      description: "Route: Pollachi – Valparai",
       highlights: [
-        "Aliyar Dam & Park",
-        "Monkey Falls",
-        "Koolangal River",
-        "Sholayar Dam"
+        "Aliyar Dam & Park, Monkey Falls",
+        "Loams & Hornbill View Points",
+        "Tiger Valley, Waverly Photo Point",
+        "Balaji Temple, Sholayar Dam"
       ],
       itinerary: [
-        "Day 1: Pollachi → Aliyar Dam, Monkey Falls, View Points → Overnight in Valparai",
-        "Day 2: Koolangal River, Balaji Temple, Nallamudi View Point, Sholayar Dam → Return to Pollachi"
+        "Day 1: Arrival Pollachi → sightseeing: Aliyar Dam & Park, Monkey Falls, Loams View Point, Hornbill View Point, Tiger Valley, Waverly Photo Point, Karvermarz Statue. Overnight stay in Valparai.",
+        "Day 2: Valparai sightseeing: Balaji Temple, Annai Velankanni Shrine, Vellamalai Tunnel & Falls, Koolangal River, Sidhi Vinayagar Temple, Nallamudi View Point, Sholayar Dam. Return to Pollachi."
       ]
     },
     {
-      id: 4,
-      title: "Valparai Hill Discovery",
+      id: "v2",
+      title: "Complete Valparai Experience",
       duration: "2N / 3D",
       image: nallamudi,
-      description: "Explore tea estates, temples, rivers, and wildlife",
+      description: "Route: Pollachi – Valparai – Pollachi",
       highlights: [
-        "Tea Estate Tours",
-        "Tiger Valley & Waverly Photo Point",
-        "Nirar Dam & Koolangal River",
-        "Vellamalai Tunnel & Falls"
+        "All major Valparai attractions",
+        "Temple visits & scenic viewpoints",
+        "Waterfalls & dam views",
+        "Tea estate landscapes"
       ],
       itinerary: [
-        "Day 1: Pollachi → Aliyar Dam, Thalanar View Point, Tiger Valley, Waverly Photo Point → Overnight in Valparai",
-        "Day 2: Nirar Dam, Koolangal River, Balaji Temple, Vellamalai Tunnel & Falls → Overnight stay",
-        "Day 3: Siddhi Vinayagar Temple, Kurangumudi View Point, Sholayar Dam → Drop at Pollachi"
+        "Day 1: Arrival Pollachi → sightseeing: Aliyar Dam & Park, Monkey Falls, Loams View Point, Hornbill View Point & Arpitorium, Tiger Valley, Waverly Photo Point, Thalanar View Point, Karvermarz Statue. Overnight stay in Valparai.",
+        "Day 2: Valparai local sightseeing: Balaji Temple, Annai Velankanni Shrine, Vellamalai Tunnel & Falls, Nirar Dam & Tunnel, Koolangal River. Overnight stay in Valparai.",
+        "Day 3: Valparai sightseeing: Siddhivinayakar Temple, Nallamudi View Point, Kurangumudi View Point & Falls, Sholayar Dam. Return to Pollachi."
       ]
     },
     {
-      id: 5,
-      title: "Jungle Stay Experience",
-      duration: "1N / 2D",
-      image: jungleStay,
-      description: "Off-road jeep rides, wildlife spotting, and campfire nights",
-      highlights: [
-        "Forest Stay with Campfire",
-        "Off-Road Jeep Adventures",
-        "Bird Watching",
-        "Kurangumudi Backwaters"
-      ],
-      itinerary: [
-        "Day 1: Pollachi Arrival → Aliyar Dam, Monkey Falls, Waverly View Point → Transfer to Jungle Stay → Campfire & Overnight Forest Stay",
-        "Day 2: Bird Watching, Kurangumudi Backwaters, Koolangal River, Nallamudi View Point → Return to Pollachi"
-      ]
-    },
-    {
-      id: 6,
-      title: "Wildlife & Hillstation Combo",
+      id: "v3",
+      title: "Valparai–Athirappilly Waterfalls Circuit",
       duration: "2N / 3D",
-      image: parambikulam,
-      description: "Perfect blend of wildlife safari and hill station beauty",
+      image: athirapally,
+      description: "Route: Pollachi – Valparai – Athirappilly",
       highlights: [
-        "Top Slip Elephant Safari",
-        "Parambikulam Jungle Safari",
-        "Nirar Dam & Balaji Temple",
-        "Koolangal River Experience"
+        "Athirappilly & Valazhachal Falls",
+        "Sholayar & Pergalkuthu Dams",
+        "Charpa Waterfalls",
+        "Hill station sightseeing"
       ],
       itinerary: [
-        "Day 1: Pollachi arrival → Aliyar Dam, Monkey Falls, View Points → Overnight in Valparai",
-        "Day 2: Balaji Temple, Nirar Dam, Koolangal River, Nallamudi View → Overnight stay",
-        "Day 3: Top Slip, Elephant Safari, Parambikulam Jungle Safari → Return to Pollachi"
-      ]
-    },
-    {
-      id: 7,
-      title: "Nature & Waterfall Retreat",
-      duration: "2N / 3D",
-      image: monkeyFalls,
-      description: "Immerse yourself in nature's symphony of waterfalls and rivers",
-      highlights: [
-        "Athirapally Waterfalls Day Trip",
-        "Monkey Falls & Aliyar Dam",
-        "Koolangal River Exploration",
-        "Nallamudi Viewpoint"
-      ],
-      itinerary: [
-        "Day 1: Pollachi → Aliyar Dam, Monkey Falls, View Points → Overnight in Valparai",
-        "Day 2: Athirapally Waterfalls Trip → Return & Overnight in Valparai",
-        "Day 3: Koolangal River, Balaji Temple, Nallamudi View Point → Drop at Pollachi"
+        "Day 1: Arrival Pollachi → sightseeing: Aliyar Dam & Park, Monkey Falls, Loams View Point, Hornbill View Point, Tiger Valley, Waverly Photo Point, Karvermarz Statue. Overnight stay in Valparai.",
+        "Day 2: Valparai → Athirappilly Falls route: Sholayar Dam, Pergalkuthu Dam View Point, Valazhachal Falls, Charpa Water Falls, Athirappilly Falls. Overnight stay in Valparai.",
+        "Day 3: Valparai sightseeing: Balaji Temple, Annai Velankanni Shrine, Vellamalai Tunnel & Falls, Koolangal River, Sidhi Vinayagar Temple, Nallamudi View Point. Return to Pollachi."
       ]
     }
   ];
 
-  const oneDayTours = [
+  const valparaiOneDayTours = [
     {
-      id: "day1",
-      title: "Valparai Local Sightseeing",
+      id: "v4",
+      title: "Valparai Local Tour",
       duration: "1 Day",
       image: sholayar,
-      description: "Explore the best of Valparai in a single day",
+      description: "Complete local sightseeing experience",
       highlights: [
-        "Balaji Temple",
-        "Nirar Dam",
-        "Koolangal River",
-        "Nallamudi Viewpoint"
+        "Balaji Temple, Velankanni Shrine",
+        "Vellamalai Tunnel & Falls",
+        "Nirar Dam, Koolangal River",
+        "Nallamudi View Point, Sholayar Dam"
       ]
     },
     {
-      id: "day2",
-      title: "Athirapally Day Trip",
+      id: "v5",
+      title: "Valparai to Athirappilly Falls",
       duration: "1 Day",
       image: athirapally,
-      description: "Witness the Niagara of India",
+      description: "Waterfalls and dam view points",
       highlights: [
         "Sholayar Dam",
-        "Perigalkuthu Dam View",
-        "Vazhachal Falls",
-        "Charpa Falls"
-      ]
-    },
-    {
-      id: "day3",
-      title: "Top Slip & Parambikulam Tour",
-      duration: "1 Day",
-      image: elephantSafari,
-      description: "Wildlife adventure and forest drives",
-      highlights: [
-        "Jungle Safari",
-        "Elephant Safari",
-        "Wildlife Viewing",
-        "Forest Drives"
+        "Pergalkuthu Dam View Point",
+        "Vazhachal & Charpa Falls",
+        "Athirappilly Falls"
       ]
     }
   ];
+
+  // COIMBATORE / POLLACHI PACKAGES
+  const pollachiiPackages = [
+    {
+      id: "p1",
+      title: "Pollachi–Valparai–Parambikulam Explorer",
+      duration: "2N / 3D",
+      image: parambikulam,
+      description: "Route: Pollachi – Valparai – Top Slip – Parambikulam – Athirappilly",
+      highlights: [
+        "Anaimalai & Massaniamman Temples",
+        "Top Slip Van/Jungle Safari",
+        "Athirappilly Falls circuit",
+        "Complete hill station tour"
+      ],
+      itinerary: [
+        "Day 1: Arrival Pollachi → sightseeing: Anaimalai, Massaniamman Temple, Top Slip (Van or Jungle Safari), Aliyar Dam & Park, Monkey Falls, Loams View Point, Hornbill View Point, Tiger Valley, Waverly Photo Point, Karvermarz Statue. Overnight stay in Valparai.",
+        "Day 2: Valparai → Athirappilly route: Sholayar Dam, Pergalkuthu Dam View Point, Valazhachal Falls, Charpa Water Falls, Athirappilly Falls. Overnight stay in Valparai.",
+        "Day 3: Valparai sightseeing: Balaji Temple, Annai Velankanni Shrine, Vellamalai Tunnel & Falls, Koolangal River, Sidhi Vinayagar Temple, Nallamudi View Point, Sholayar Dam. Return to Pollachi."
+      ]
+    },
+    {
+      id: "p2",
+      title: "Pollachi–Top Slip–Valparai Nature Trail",
+      duration: "2N / 3D",
+      image: elephantSafari,
+      description: "Route: Pollachi – Top Slip – Parambikulam – Valparai",
+      highlights: [
+        "Elephant & Jungle Safari",
+        "Parambikulam Wildlife",
+        "Complete Valparai sightseeing",
+        "Temple & waterfall visits"
+      ],
+      itinerary: [
+        "Day 1: Arrival Pollachi → sightseeing: Aliyar Dam & Park, Monkey Falls, Loams View Point, Hornbill View Point, Tiger Valley, Waverly Photo Point, Karvermarz Statue. Overnight stay in Valparai.",
+        "Day 2: Valparai sightseeing: Balaji Temple, Annai Velankanni Shrine, Vellamalai Tunnel & Falls, Koolangal River, Sidhi Vinayagar Temple, Nallamudi View Point, Sholayar Dam. Return to Pollachi.",
+        "Day 3: Valparai → Top Slip sightseeing: Anaimalai, Massaniamman Temple, Top Slip (Elephant or Jungle Safari), Parambikulam Safari. Return to Pollachi."
+      ]
+    }
+  ];
+
+  const pollachiiOneDayTours = [
+    {
+      id: "p3",
+      title: "Top Slip & Parambikulam Safari",
+      duration: "1 Day",
+      image: elephantSafari,
+      description: "Wildlife adventure package",
+      highlights: [
+        "Anaimalai & Massaniamman Temples",
+        "Top Slip Elephant Safari",
+        "Top Slip Jungle Safari",
+        "Parambikulam 3-hour Safari"
+      ]
+    },
+    {
+      id: "p4",
+      title: "Pollachi–Valparai Scenic Drive",
+      duration: "1 Day",
+      image: monkeyFalls,
+      description: "City travel package with hill views",
+      highlights: [
+        "Aliyar Dam & Park",
+        "Monkey Falls, View Points",
+        "Tiger Valley, Waverly Point",
+        "Overnight in Valparai option"
+      ]
+    }
+  ];
+
+  // KERALA / JUNGLE STAY PACKAGES
+  const keralaPackages = [
+    {
+      id: "k1",
+      title: "Kerala–Valparai–Parambikulam Explorer",
+      duration: "2N / 3D",
+      image: athirapally,
+      description: "Route: Chalakudy – Athirappilly – Valparai – Parambikulam – Pollachi",
+      highlights: [
+        "Athirappilly Falls from Kerala side",
+        "Complete Valparai experience",
+        "Top Slip & Parambikulam Safari",
+        "Cross-state scenic journey"
+      ],
+      itinerary: [
+        "Day 1: Arrival Chalakudy → Athirappilly Falls sightseeing: Pergalkuthu Dam View Point, Valazhachal Falls, Charpa Water Falls, Sholayar Dam. Overnight stay in Valparai.",
+        "Day 2: Valparai sightseeing: Balaji Temple, Annai Velankanni Shrine, Vellamalai Tunnel & Falls, Nirar Dam, Koolangal River, Sidhi Vinayagar Temple, Nallamudi View Point. Overnight stay in Valparai.",
+        "Day 3: Valparai → Top Slip & Parambikulam sightseeing: Karvermarz Statue, Waverly Photo Point, Tiger Valley, Hornbill View Point, Loams View Point, Monkey Falls, Aliyar Dam & Park, Massaniamman Temple, Safari options. Return to Pollachi."
+      ]
+    },
+    {
+      id: "k2",
+      title: "Valparai Jungle Stay Experience",
+      duration: "1N / 2D",
+      image: jungleStay,
+      description: "Deep forest stay surrounded by nature — includes meals, wildlife watching, and adventure",
+      highlights: [
+        "Forest Stay with all meals included",
+        "Off-road Jeep Ride & Bird Watching",
+        "Campfire & Music, Day Safari",
+        "Kurangumudi Backwater visit"
+      ],
+      itinerary: [
+        "Day 1: Arrival Pollachi → sightseeing: Aliyar Dam & Park, Monkey Falls, Loams View Point, Hornbill View Point, Tiger Valley, Waverly Photo Point, Karvermarz Statue. Overnight stay in Valparai.",
+        "Day 2: Jungle stay sightseeing: Kurangumudi Backwater, Koolangal River, Nallamudi View Point. Return to Pollachi."
+      ],
+      includes: "Welcome drink, breakfast, lunch, dinner, tea/coffee. Activities: Off-road Jeep Ride, Pickup & Drop, Bird Watching, Waterfalls visit, Campfire & Music, Day Safari."
+    }
+  ];
+
 
   return (
     <div className="min-h-screen">
       <Navbar />
       
       {/* Hero Section */}
-      <section className="pt-24 pb-12 bg-gradient-to-b from-primary/10 to-background">
+      <section className="pt-20 md:pt-24 pb-8 md:pb-12 bg-gradient-to-b from-primary/10 to-background">
         <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto space-y-4">
-            <h1 className="text-4xl md:text-5xl font-bold">
-              🌿 PACKAGES
+          <div className="text-center max-w-3xl mx-auto space-y-3 md:space-y-4">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold">
+              🌿 TOUR PACKAGES
             </h1>
-            <p className="text-xl text-muted-foreground italic">
+            <p className="text-lg md:text-xl text-muted-foreground italic">
               "Where journeys become memories and nature becomes home."
             </p>
-            <p className="text-lg">
+            <p className="text-base md:text-lg">
               ✨ Explore Our Exclusive Travel Experiences
-            </p>
-            <p className="text-muted-foreground">
-              Each package is paired with breathtaking imagery—carefully chosen to reflect the soul of the journey. 
-              Click into any experience to reveal full details, day-by-day itineraries, and magical moments you'll cherish forever.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Main Packages */}
-      <section className="py-16 bg-background">
+      {/* VALPARAI PACKAGES */}
+      <section className="py-8 md:py-16 bg-background">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">Multi-Day Packages</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {packages.map((pkg) => (
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center">🌿 Valparai Packages</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-8 mb-8 md:mb-12">
+            {valparaiPackages.map((pkg) => (
               <PackageCard
                 key={pkg.id}
                 title={pkg.title}
@@ -224,25 +247,82 @@ const TourPackages = () => {
                 image={pkg.image}
                 highlights={pkg.highlights}
                 description={pkg.description}
+                itinerary={pkg.itinerary}
               />
             ))}
+          </div>
+          
+          {/* Valparai One Day Tours */}
+          <div className="pt-6 md:pt-8 border-t border-border">
+            <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-center">One-Day Tours</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+              {valparaiOneDayTours.map((tour) => (
+                <PackageCard
+                  key={tour.id}
+                  title={tour.title}
+                  duration={tour.duration}
+                  image={tour.image}
+                  highlights={tour.highlights}
+                  description={tour.description}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* One Day Tours */}
-      <section className="py-16 bg-muted/50">
+      {/* COIMBATORE / POLLACHI PACKAGES */}
+      <section className="py-8 md:py-16 bg-muted/50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-bold mb-8 text-center">🚗 One-Day Special Tours</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {oneDayTours.map((tour) => (
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center">🏞️ Coimbatore / Pollachi Packages</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8 mb-8 md:mb-12">
+            {pollachiiPackages.map((pkg) => (
               <PackageCard
-                key={tour.id}
-                title={tour.title}
-                duration={tour.duration}
-                image={tour.image}
-                highlights={tour.highlights}
-                description={tour.description}
+                key={pkg.id}
+                title={pkg.title}
+                duration={pkg.duration}
+                image={pkg.image}
+                highlights={pkg.highlights}
+                description={pkg.description}
+                itinerary={pkg.itinerary}
+              />
+            ))}
+          </div>
+          
+          {/* Pollachi One Day Tours */}
+          <div className="pt-6 md:pt-8 border-t border-border">
+            <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-center">One-Day Tours</h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+              {pollachiiOneDayTours.map((tour) => (
+                <PackageCard
+                  key={tour.id}
+                  title={tour.title}
+                  duration={tour.duration}
+                  image={tour.image}
+                  highlights={tour.highlights}
+                  description={tour.description}
+                />
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* KERALA / JUNGLE STAY PACKAGES */}
+      <section className="py-8 md:py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center">🌴 Other / Kerala / Jungle Stay Packages</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-8">
+            {keralaPackages.map((pkg) => (
+              <PackageCard
+                key={pkg.id}
+                title={pkg.title}
+                duration={pkg.duration}
+                image={pkg.image}
+                highlights={pkg.highlights}
+                description={pkg.description}
+                itinerary={pkg.itinerary}
+                includes={pkg.includes}
               />
             ))}
           </div>
@@ -250,19 +330,19 @@ const TourPackages = () => {
       </section>
 
       {/* Emotional Footer Section */}
-      <section className="py-16 bg-gradient-to-b from-background to-primary/10">
+      <section className="py-10 md:py-16 bg-gradient-to-b from-background to-primary/10">
         <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center space-y-6">
-            <p className="text-2xl font-serif italic text-foreground">
+          <div className="max-w-3xl mx-auto text-center space-y-4 md:space-y-6">
+            <p className="text-lg md:text-2xl font-serif italic text-foreground px-4">
               "Every journey starts with a heartbeat. Let the mountains call you, 
               the waterfalls embrace you, and the forests whisper your story."
             </p>
-            <div className="pt-4">
+            <div className="pt-2 md:pt-4">
               <a
                 href="https://wa.me/919894177771"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8 rounded-md text-lg font-medium transition-colors"
+                className="inline-flex items-center justify-center bg-primary text-primary-foreground hover:bg-primary/90 h-10 md:h-12 px-6 md:px-8 rounded-md text-base md:text-lg font-medium transition-colors"
               >
                 Start Your Journey 🌟
               </a>
