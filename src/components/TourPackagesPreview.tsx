@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import PackageCard from "./PackageCard";
 import athirapally from "@/assets/athirapally_falls.jpg";
 import jungleStay from "@/assets/jungle_stay_cottage.jpg";
-import teaEstates from "@/assets/valparai_tea_estates_tour.webp";
+import teaEstates from "@/assets/tea_estate.webp";
 
 const TourPackagesPreview = () => {
   const featuredPackages = [
@@ -17,6 +17,11 @@ const TourPackagesPreview = () => {
         "Sholayar & Pergalkuthu Dams",
         "Charpa Waterfalls",
         "Hill station sightseeing"
+      ],
+      itinerary: [
+        "Day 1: Arrival Pollachi → sightseeing: Aliyar Dam & Park, Monkey Falls, Loams View Point, Hornbill View Point, Tiger Valley, Waverly Photo Point, Karvermarz Statue. Overnight stay in Valparai.",
+        "Day 2: Valparai → Athirappilly Falls route: Sholayar Dam, Pergalkuthu Dam View Point, Valazhachal Falls, Charpa Water Falls, Athirappilly Falls. Overnight stay in Valparai.",
+        "Day 3: Valparai sightseeing: Balaji Temple, Annai Velankanni Shrine, Vellamalai Tunnel & Falls, Koolangal River, Sidhi Vinayagar Temple, Nallamudi View Point. Return to Pollachi."
       ]
     },
     {
@@ -24,25 +29,34 @@ const TourPackagesPreview = () => {
       title: "Valparai Jungle Stay Experience",
       duration: "1N / 2D",
       image: jungleStay,
-      description: "Deep forest stay with adventure activities",
+      description: "Deep forest stay surrounded by nature — includes meals, wildlife watching, and adventure",
       highlights: [
-        "Forest Stay with all meals",
-        "Off-road Jeep & Bird Watching",
-        "Campfire & Music",
-        "Kurangumudi Backwater"
-      ]
+        "Forest Stay with all meals included",
+        "Off-road Jeep Ride & Bird Watching",
+        "Campfire & Music, Day Safari",
+        "Kurangumudi Backwater visit"
+      ],
+      itinerary: [
+        "Day 1: Arrival Pollachi → sightseeing: Aliyar Dam & Park, Monkey Falls, Loams View Point, Hornbill View Point, Tiger Valley, Waverly Photo Point, Karvermarz Statue. Overnight stay in Valparai.",
+        "Day 2: Jungle stay sightseeing: Kurangumudi Backwater, Koolangal River, Nallamudi View Point. Return to Pollachi."
+      ],
+      includes: "Welcome drink, breakfast, lunch, dinner, tea/coffee. Activities: Off-road Jeep Ride, Pickup & Drop, Bird Watching, Waterfalls visit, Campfire & Music, Day Safari."
     },
     {
       id: "v1",
       title: "Valparai Getaway",
       duration: "1N / 2D",
       image: teaEstates,
-      description: "Perfect weekend in the hills",
+      description: "Route: Pollachi – Valparai",
       highlights: [
-        "Aliyar Dam & Monkey Falls",
-        "Tiger Valley & View Points",
-        "Balaji Temple",
-        "Sholayar Dam"
+        "Aliyar Dam & Park, Monkey Falls",
+        "Loams & Hornbill View Points",
+        "Tiger Valley, Waverly Photo Point",
+        "Balaji Temple, Sholayar Dam"
+      ],
+      itinerary: [
+        "Day 1: Arrival Pollachi → sightseeing: Aliyar Dam & Park, Monkey Falls, Loams View Point, Hornbill View Point, Tiger Valley, Waverly Photo Point, Karvermarz Statue. Overnight stay in Valparai.",
+        "Day 2: Valparai sightseeing: Balaji Temple, Annai Velankanni Shrine, Vellamalai Tunnel & Falls, Koolangal River, Sidhi Vinayagar Temple, Nallamudi View Point, Sholayar Dam. Return to Pollachi."
       ]
     }
   ];
@@ -71,6 +85,8 @@ const TourPackagesPreview = () => {
               image={pkg.image}
               highlights={pkg.highlights}
               description={pkg.description}
+              itinerary={pkg.itinerary}
+              includes={pkg.includes}
             />
           ))}
         </div>

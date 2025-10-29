@@ -4,13 +4,17 @@ import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import PackageCard from "@/components/PackageCard";
 import athirapally from "@/assets/athirapally_falls.jpg";
-import sholayar from "@/assets/sholayar_dam_tour.jpg";
-import teaEstates from "@/assets/valparai_tea_estates_tour.webp";
-import nallamudi from "@/assets/nallamudi_view_point_tour.jpg";
+import sholayar from "@/assets/sholayar_dam.jpg";
+import teaEstates from "@/assets/tea_estate.webp";
+import nallamudi from "@/assets/nallamudi_viewpoint.jpg";
 import jungleStay from "@/assets/jungle_stay_cottage.jpg";
 import parambikulam from "@/assets/parambikulam_forest_lake.jpg";
-import monkeyFalls from "@/assets/monkey_falls_tour.jpg";
+import monkeyFalls from "@/assets/monkey_falls.jpg";
 import elephantSafari from "@/assets/topslip_elephant_safari.jpg";
+import aliyarDam from "@/assets/aliyar_dam.jpg";
+import balajiTemple from "@/assets/balaji_temple.jpg";
+import grassHills from "@/assets/grass_hills.jpg";
+import siruvaniFalls from "@/assets/siruvani_waterfalls.png";
 
 const TourPackages = () => {
   useEffect(() => {
@@ -40,7 +44,7 @@ const TourPackages = () => {
       id: "v2",
       title: "Complete Valparai Experience",
       duration: "2N / 3D",
-      image: nallamudi,
+      image: grassHills,
       description: "Route: Pollachi – Valparai – Pollachi",
       highlights: [
         "All major Valparai attractions",
@@ -79,26 +83,32 @@ const TourPackages = () => {
       id: "v4",
       title: "Valparai Local Tour",
       duration: "1 Day",
-      image: sholayar,
+      image: balajiTemple,
       description: "Complete local sightseeing experience",
       highlights: [
         "Balaji Temple, Velankanni Shrine",
         "Vellamalai Tunnel & Falls",
         "Nirar Dam, Koolangal River",
         "Nallamudi View Point, Sholayar Dam"
+      ],
+      itinerary: [
+        "Sightseeing: Balaji Temple, Annai Velankanni Shrine, Vellamalai Tunnel & Falls, Nirar Dam, Koolangal River, Sidhi Vinayagar Temple, Nallamudi View Point, Sholayar Dam. Return to Valparai."
       ]
     },
     {
       id: "v5",
       title: "Valparai to Athirappilly Falls",
       duration: "1 Day",
-      image: athirapally,
+      image: siruvaniFalls,
       description: "Waterfalls and dam view points",
       highlights: [
         "Sholayar Dam",
         "Pergalkuthu Dam View Point",
         "Vazhachal & Charpa Falls",
         "Athirappilly Falls"
+      ],
+      itinerary: [
+        "Sightseeing: Sholayar Dam, Pergalkuthu Dam View Point, Vazhachal Falls, Charpa Water Falls, Athirappilly Falls. Return to Valparai."
       ]
     }
   ];
@@ -127,7 +137,7 @@ const TourPackages = () => {
       id: "p2",
       title: "Pollachi–Top Slip–Valparai Nature Trail",
       duration: "2N / 3D",
-      image: elephantSafari,
+      image: aliyarDam,
       description: "Route: Pollachi – Top Slip – Parambikulam – Valparai",
       highlights: [
         "Elephant & Jungle Safari",
@@ -155,6 +165,9 @@ const TourPackages = () => {
         "Top Slip Elephant Safari",
         "Top Slip Jungle Safari",
         "Parambikulam 3-hour Safari"
+      ],
+      itinerary: [
+        "Sightseeing: Anaimalai, Massaniamman Temple, Top Slip (Elephant or Jungle Safari), Parambikulam Jungle Safari (3 hours). Return to Pollachi."
       ]
     },
     {
@@ -168,6 +181,9 @@ const TourPackages = () => {
         "Monkey Falls, View Points",
         "Tiger Valley, Waverly Point",
         "Overnight in Valparai option"
+      ],
+      itinerary: [
+        "Route includes: Aliyar Dam & Park, Monkey Falls, Loams View Point, Hornbill View Point & Arpitorium, Tiger Valley, Waverly Photo Point, Thalanar View Point, Karvermarz Statue. Overnight stay in Valparai."
       ]
     }
   ];
@@ -178,7 +194,7 @@ const TourPackages = () => {
       id: "k1",
       title: "Kerala–Valparai–Parambikulam Explorer",
       duration: "2N / 3D",
-      image: athirapally,
+      image: sholayar,
       description: "Route: Chalakudy – Athirappilly – Valparai – Parambikulam – Pollachi",
       highlights: [
         "Athirappilly Falls from Kerala side",
