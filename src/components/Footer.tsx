@@ -57,6 +57,10 @@ const Footer = () => {
                   <Smartphone className="h-4 w-4 md:h-5 md:w-5 mr-2 flex-shrink-0" />
                   <span>+91 75980 10898</span>
                 </a>
+                <a href="tel:+916379551388" className="flex items-center justify-center md:justify-end text-sm md:text-base text-secondary-foreground/80 hover:text-primary transition-colors">
+                  <Smartphone className="h-4 w-4 md:h-5 md:w-5 mr-2 flex-shrink-0" />
+                  <span>+91 63795 51388</span>
+                </a>
               </div>
             </div>
 

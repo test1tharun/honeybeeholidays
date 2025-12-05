@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import PackageCard from "@/components/PackageCard";
+import ImageGallery from "@/components/ImageGallery";
+import { roomImages, vehicleImages } from "@/lib/galleryImages";
 import athirapally from "@/assets/athirapally_falls.jpg";
 import sholayar from "@/assets/sholayar_dam.jpg";
 import teaEstates from "@/assets/tea_estate.webp";
@@ -232,7 +234,7 @@ const TourPackages = () => {
   return (
     <div className="min-h-screen">
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="pt-20 md:pt-24 pb-8 md:pb-12 bg-gradient-to-b from-primary/10 to-background">
         <div className="container mx-auto px-4">
@@ -267,7 +269,7 @@ const TourPackages = () => {
               />
             ))}
           </div>
-          
+
           {/* Valparai One Day Tours */}
           <div className="pt-6 md:pt-8 border-t border-border">
             <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-center">One-Day Tours</h3>
@@ -304,7 +306,7 @@ const TourPackages = () => {
               />
             ))}
           </div>
-          
+
           {/* Pollachi One Day Tours */}
           <div className="pt-6 md:pt-8 border-t border-border">
             <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-center">One-Day Tours</h3>
@@ -345,12 +347,32 @@ const TourPackages = () => {
         </div>
       </section>
 
+      {/* Room Gallery Section */}
+      <section className="py-8 md:py-16 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <ImageGallery
+            images={roomImages}
+            title="🏨 Our Accommodations"
+          />
+        </div>
+      </section>
+
+      {/* Vehicle Gallery Section */}
+      <section className="py-8 md:py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <ImageGallery
+            images={vehicleImages}
+            title="🚗 Our Fleet"
+          />
+        </div>
+      </section>
+
       {/* Emotional Footer Section */}
       <section className="py-10 md:py-16 bg-gradient-to-b from-background to-primary/10">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-4 md:space-y-6">
             <p className="text-lg md:text-2xl font-serif italic text-foreground px-4">
-              "Every journey starts with a heartbeat. Let the mountains call you, 
+              "Every journey starts with a heartbeat. Let the mountains call you,
               the waterfalls embrace you, and the forests whisper your story."
             </p>
             <div className="pt-2 md:pt-4">

@@ -11,6 +11,8 @@ import CultureFood from "@/components/CultureFood";
 import TravelInfo from "@/components/TravelInfo";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import ImageGallery from "@/components/ImageGallery";
+import { roomImages, vehicleImages } from "@/lib/galleryImages";
 
 const Index = () => {
   const location = useLocation();
@@ -36,6 +38,27 @@ const Index = () => {
       <TourPackagesPreview />
       <Adventures />
       <CultureFood />
+      
+      {/* Room Gallery Section */}
+      <section className="py-8 md:py-16 bg-background">
+        <div className="container mx-auto px-4">
+          <ImageGallery 
+            images={roomImages} 
+            title="🏨 Our Accommodations" 
+          />
+        </div>
+      </section>
+
+      {/* Vehicle Gallery Section */}
+      <section className="py-8 md:py-16 bg-muted/50">
+        <div className="container mx-auto px-4">
+          <ImageGallery 
+            images={vehicleImages} 
+            title="🚗 Our Fleet" 
+          />
+        </div>
+      </section>
+
       <TravelInfo />
       <Footer />
       <WhatsAppButton />
